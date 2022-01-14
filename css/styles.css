@@ -1,20 +1,19 @@
 .page {
   background-color: peachpuff;
+  padding: 5%;
 }
 .page1, .page2-1, .page2-2, .page2-3, .page3-1, .page3-2, .page3-3, .page3-4, .page3-5, .page3-6, .page4-1, .page4-2, .page4-3, .page4-4 {
   display: none;
   background-color: peachpuff;
+  padding: 5%;
 }
 
-.java{
+.java, .ruby, .python{
   display: none;
+  background-color: peachpuff;
+  padding: 5%;
 }
-.ruby {
-  display: none;
-}
-.python {
-  display: none;
-}
+
 .jumbotron{
   background-image: url(https://d1lss44hh2trtw.cloudfront.net/assets/editorial/2020/05/wildfire-review-story.jpg);
   background-size: 100% 100%;
@@ -24,4 +23,8 @@
 body {
   background-color: black;
   text-align: center;
+}
+
+input {
+  margin-top: 3%;
 }

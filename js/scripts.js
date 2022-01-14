@@ -6,7 +6,7 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page").hide();
     $(".page1").show();
-    $(".insertName").text(name)
+    $(".insertName").text(name + "!!" ).toUpperCase();
   });
 //page1
   $("#form2").submit(function(event){
