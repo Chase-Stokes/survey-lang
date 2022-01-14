@@ -14,31 +14,52 @@
   <div class="page">
     <p>Enter your name for this adventure</p>
     <form id=form1>
-
+      <label for="name">Enter Your Name:</label>
+        <input id="name" type="text">
+        <button class="btn-dark">next</button>
     </form>
   </div>
   <div class="page1">
     <p>Weapons which to choose? - 3 answer question</p>
     <form id=form2>
-      
+      <select name="weapon" id="weapon">
+        <option value="1">Sword & Shield</option>
+        <option value="2">2h Axe</option>
+        <option value="3">Magical Staff</option>
+      </select>
+      <button class="btn-dark">next</button>
     </form>
   </div>
   <div class="page2-1">
     <p>You chose the sword and shield -- You rush outside with your weapon in tow and kill some monster -- Insert another 2 answer question here</p>
-    <form id=form2-1>
-      
+    <form id="form2-1">
+      <select name="weapon" id="weapon">
+        <option value="1">option1</option>
+        <option value="2">option2</option>
+
+      </select>
+      <button class="btn-dark">next</button>
     </form>
   </div>
   <div class="page2-2">
     <p>You chose the two handed axe -- You rush outside with your weapon in tow and kill some monster -- Insert another 2 answer question here</p>
     <form id=form2-2>
-      
+      <select name="weapon" id="weapon">
+        <option value="1">option1</option>
+        <option value="2">option2</option>
+      </select>
+      <button class="btn-dark">next</button>
     </form>
   </div>
   <div class="page2-3">
     <p>You chose the staff -- You rush outside with your weapon in tow and kill some monster -- Insert another 2 answer question here</p>
     <form id=form2-3>
-      
+      <select name="weapon" id="weapon">
+        <option value="1">option1</option>
+        <option value="2">option2</option>
+
+      </select>
+      <button class="btn-dark">next</button>
     </form>
   </div>
   <div class="page3-1">
@@ -108,14 +129,17 @@
   <div class="java">
     <h3>Java?</h3>
     <p>The chest was full of coffee beans!? Based off of your choices the past few minutes, you should consider learning Java.</p>
+    <p><span class="javaOutput"></span></p>
   </div>
   <div class="ruby">
     <h3>Rubies!</h3>
     <p>The chest was full of rubies! Based off of your choices the past few minutes, you should consider learning Ruby.</p>
+    <p><span class="rubyOutput"></span></p>
   </div>
   <div class="python">
     <h3>A Snake!?</h3>
     <p>A python lunges out of the chest and bites your hand. Based off of your choices the past few minutes, you should consider learning Python. </p>
+    <p><span class="pythonOutput"></span></p>
   </div>
   
 </body>

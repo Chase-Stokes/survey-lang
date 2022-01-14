@@ -26,14 +26,15 @@ $(document).ready(function(){
   })
   //page2-1
   $("#form2-1").submit(function(event){
-    const weapon = parseInt($("#weapon").val());
+    const p2 = parseInt($("#p2-1").val());
     event.preventDefault();
+    console.log(valueTotal)
     $(".page2-1").hide();
-    if (weapon === 1){
-          valueTotal +=50
+    if (p2 === 1){
+          valueTotal +=50;
           $(".page3-1").show();
         } else {
-          valueTotal +=25
+          valueTotal +=25;
           $(".page3-2").show();
         };
   })
@@ -41,6 +42,7 @@ $(document).ready(function(){
   $("#form2-2").submit(function(event){
     const weapon = parseInt($("#weapon").val());
     event.preventDefault();
+    console.log(valueTotal)
     $(".page2-2").hide();
     if (weapon === 1){
           valueTotal +=25
@@ -54,6 +56,7 @@ $(document).ready(function(){
   $("#form2-3").submit(function(event){
     const weapon = parseInt($("#weapon").val());
     event.preventDefault();
+    console.log(valueTotal)
     $(".page2-3").hide();
     if (weapon === 1){
           valueTotal +=10
@@ -142,70 +145,72 @@ $(document).ready(function(){
         };
   })
   //page 4-1
-  $("#form4-1").submit(function(event){
-    event.preventDefault();
-    const question2 = parseInt($("#option2").val());
-    $(".page4-1").hide();
-    if (question2 === 3){
-      valueTotal +=5
-      if (valueTotal <=10 && valueTotal > 0){
-        return $(".output").text("it works")
-      }else {
-        return $(".output").text("it still works")
-      }
-    }else {
-      total +=10
-      if (total <=10 && total > 0){
-        return $(".output").text("it works")
-      }else {
-        return $(".output").text("it still works")
-      }
-    }       
-  })
+  // $("#form4-1").submit(function(event){
+  //   event.preventDefault();
+  //   const question2 = parseInt($("#option2").val());
+  //   $(".page4-1").hide();
+  //   if (question2 === 3){
+  //     valueTotal +=5
+  //     if (valueTotal <=10){
+  //       return $(".java").text("it works")
+  //     }else if (valueTotal <= 10){
+  //       return $(".ruby").text();
+  //     } else {
+  //       return $(".python").text("it still works")
+  //     }
+  //   }else {
+  //     total +=10
+  //     if (total <=10 && total > 0){
+  //       return $(".output").text("it works")
+  //     }else {
+  //       return $(".output").text("it still works")
+  //     }
+  //   }       
+  // })
   //page 4-2
-  $("#form2").submit(function(event){
-    event.preventDefault();
-    const question2 = parseInt($("#option2").val());
-    $(".output").show();
-    $(".page2").hide();
-    if (question2 === 3){
-      total +=5
-      if (total <=10 && total > 0){
-        return $(".output").text("it works")
-      }else {
-        return $(".output").text("it still works")
-      }
-    }else {
-      total +=10
-      if (total <=10 && total > 0){
-        return $(".output").text("it works")
-      }else {
-        return $(".output").text("it still works")
-      }
-    }       
-  })
+  // $("#form2").submit(function(event){
+  //   event.preventDefault();
+  //   const question2 = parseInt($("#option2").val());
+  //   $(".output").show();
+  //   $(".page2").hide();
+  //   if (question2 === 3){
+  //     total +=5
+  //     if (total <=10 && total > 0){
+  //       return $(".output").text("it works")
+  //     }else {
+  //       return $(".output").text("it still works")
+  //     }
+  //   }else {
+  //     total +=10
+  //     if (total <=10 && total > 0){
+  //       return $(".output").text("it works")
+  //     }else {
+  //       return $(".output").text("it still works")
+  //     }
+  //   }       
+  // })
   //page 4-3
-  $("#form2").submit(function(event){
-    event.preventDefault();
-    const question2 = parseInt($("#option2").val());
-    $(".output").show();
-    $(".page2").hide();
-    if (question2 === 3){
-      total +=5
-      if (total <=10 && total > 0){
-        return $(".output").text("it works")
-      }else {
-        return $(".output").text("it still works")
-      }
-    }else {
-      total +=10
-      if (total <=10 && total > 0){
-        return $(".output").text("it works")
-      }else {
-        return $(".output").text("it still works")
-      }
-    }       
-  })
+  // $("#form2").submit(function(event){
+  //   event.preventDefault();
+  //   const question2 = parseInt($("#option2").val());
+  //   $(".output").show();
+  //   $(".page2").hide();
+  //   if (question2 === 3){
+  //     total +=5
+  //     if (total <=10 && total > 0){
+  //       return $(".output").text("it works")
+  //     }else {
+  //       return $(".output").text("it still works")
+  //     }
+  //   }else {
+  //     total +=10
+  //     if (total <=10 && total > 0){
+  //       return $(".output").text("it works")
+  //     }else {
+  //       return $(".output").text("it still works")
+  //     }
+  //   }       
+  // })
   
   
 })
