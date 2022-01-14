@@ -6,7 +6,7 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page").hide();
     $(".page1").show();
-
+    $(".insertName").text(name)
   });
 //page1
   $("#form2").submit(function(event){
@@ -26,11 +26,10 @@ $(document).ready(function(){
   })
   //page2-1
   $("#form2-1").submit(function(event){
-    const p2 = parseInt($("#p2-1").val());
+    const choice1 = parseInt($("#p2-1").val());
     event.preventDefault();
-    console.log(valueTotal)
     $(".page2-1").hide();
-    if (p2 === 1){
+    if (choice1 === 1){
           valueTotal +=50;
           $(".page3-1").show();
         } else {
@@ -40,11 +39,10 @@ $(document).ready(function(){
   })
   //page2-2
   $("#form2-2").submit(function(event){
-    const weapon = parseInt($("#weapon").val());
+    const choice2 = parseInt($("#p2-2").val());
     event.preventDefault();
-    console.log(valueTotal)
     $(".page2-2").hide();
-    if (weapon === 1){
+    if (choice2 === 1){
           valueTotal +=25
           $(".page3-3").show();
         } else {
@@ -54,11 +52,11 @@ $(document).ready(function(){
   })
   //page2-3
   $("#form2-3").submit(function(event){
-    const weapon = parseInt($("#weapon").val());
+    const choice3 = parseInt($("#p2-3").val());
     event.preventDefault();
     console.log(valueTotal)
     $(".page2-3").hide();
-    if (weapon === 1){
+    if (choice3 === 1){
           valueTotal +=10
           $(".page3-5").show();
         } else {
@@ -68,10 +66,10 @@ $(document).ready(function(){
   })
   //page3-1
   $("#form3-1").submit(function(event){
-    const weapon = parseInt($("#weapon").val());
+    const choice4 = parseInt($("#p3-1").val());
     event.preventDefault();
     $(".page3-1").hide();
-    if (weapon === 1){
+    if (choice4 === 1){
           valueTotal +=10
           $(".page4-1").show();
         } else {
@@ -81,10 +79,10 @@ $(document).ready(function(){
   })
   //page3-2
   $("#form3-2").submit(function(event){
-    const weapon = parseInt($("#weapon").val());
+    const choice5 = parseInt($("#p3-2").val());
     event.preventDefault();
     $(".page3-2").hide();
-    if (weapon === 1){
+    if (choice5 === 1){
           valueTotal +=10
           $(".page4-3").show();
         } else {
@@ -94,10 +92,10 @@ $(document).ready(function(){
   })
   //page3-3
   $("#form3-3").submit(function(event){
-    const weapon = parseInt($("#weapon").val());
+    const choice6 = parseInt($("#p3-3").val());
     event.preventDefault();
     $(".page3-3").hide();
-    if (weapon === 1){
+    if (choice6 === 1){
           valueTotal +=10
           $(".page4-1").show();
         } else {
@@ -107,10 +105,10 @@ $(document).ready(function(){
   })
   //page3-4
   $("#form3-4").submit(function(event){
-    const weapon = parseInt($("#weapon").val());
+    const choice7 = parseInt($("#p3-4").val());
     event.preventDefault();
     $(".page3-4").hide();
-    if (weapon === 1){
+    if (choice7 === 1){
           valueTotal +=10
           $(".page4-3").show();
         } else {
@@ -120,10 +118,10 @@ $(document).ready(function(){
   })
   //page3-5
   $("#form3-5").submit(function(event){
-    const weapon = parseInt($("#weapon").val());
+    const choice8 = parseInt($("#p3-5").val());
     event.preventDefault();
     $(".page3-5").hide();
-    if (weapon === 1){
+    if (choice8 === 1){
           valueTotal +=10
           $(".page4-1").show();
         } else {
@@ -133,10 +131,10 @@ $(document).ready(function(){
   })
   //page3-6
   $("#form3-6").submit(function(event){
-    const weapon = parseInt($("#weapon").val());
+    const choice9 = parseInt($("#p3-6").val());
     event.preventDefault();
     $(".page3-6").hide();
-    if (weapon === 1){
+    if (choice9 === 1){
           valueTotal +=10
           $(".page4-3").show();
         } else {
@@ -144,73 +142,106 @@ $(document).ready(function(){
           $(".page4-4").show();
         };
   })
-  //page 4-1
-  // $("#form4-1").submit(function(event){
-  //   event.preventDefault();
-  //   const question2 = parseInt($("#option2").val());
-  //   $(".page4-1").hide();
-  //   if (question2 === 3){
-  //     valueTotal +=5
-  //     if (valueTotal <=10){
-  //       return $(".java").text("it works")
-  //     }else if (valueTotal <= 10){
-  //       return $(".ruby").text();
-  //     } else {
-  //       return $(".python").text("it still works")
-  //     }
-  //   }else {
-  //     total +=10
-  //     if (total <=10 && total > 0){
-  //       return $(".output").text("it works")
-  //     }else {
-  //       return $(".output").text("it still works")
-  //     }
-  //   }       
-  // })
-  //page 4-2
-  // $("#form2").submit(function(event){
-  //   event.preventDefault();
-  //   const question2 = parseInt($("#option2").val());
-  //   $(".output").show();
-  //   $(".page2").hide();
-  //   if (question2 === 3){
-  //     total +=5
-  //     if (total <=10 && total > 0){
-  //       return $(".output").text("it works")
-  //     }else {
-  //       return $(".output").text("it still works")
-  //     }
-  //   }else {
-  //     total +=10
-  //     if (total <=10 && total > 0){
-  //       return $(".output").text("it works")
-  //     }else {
-  //       return $(".output").text("it still works")
-  //     }
-  //   }       
-  // })
-  //page 4-3
-  // $("#form2").submit(function(event){
-  //   event.preventDefault();
-  //   const question2 = parseInt($("#option2").val());
-  //   $(".output").show();
-  //   $(".page2").hide();
-  //   if (question2 === 3){
-  //     total +=5
-  //     if (total <=10 && total > 0){
-  //       return $(".output").text("it works")
-  //     }else {
-  //       return $(".output").text("it still works")
-  //     }
-  //   }else {
-  //     total +=10
-  //     if (total <=10 && total > 0){
-  //       return $(".output").text("it works")
-  //     }else {
-  //       return $(".output").text("it still works")
-  //     }
-  //   }       
-  // })
+  // page 4-1
+  $("#form4-1").submit(function(event){
+    event.preventDefault();
+    const choice10 = parseInt($("#p4-1").val());
+    $(".page4-1").hide();
+    if (choice10 === 3){
+      valueTotal +=5
+      if (valueTotal <=10){
+        return $(".java").show()
+      }else if (valueTotal <= 10){
+        return $(".ruby").show();
+      } else {
+        return $(".python").show();
+      }
+    }else {
+      valueTotal +=10
+      if (valueTotal <=10){
+        return $(".java").show()
+      }else if (valueTotal <= 10){
+        return $(".ruby").show();
+      } else {
+        return $(".python").show();
+      } 
+    }    
+  })
+  // page 4-2
+  $("#form4-2").submit(function(event){
+    event.preventDefault();
+    const choice11 = parseInt($("#p4-2").val());
+    $(".page4-2").hide();
+    if (choice11 === 3){
+      valueTotal +=5
+      if (valueTotal <=10){
+        return $(".java").show()
+      }else if (valueTotal <= 10){
+        return $(".ruby").show();
+      } else {
+        return $(".python").show();
+      }
+    }else {
+      valueTotal +=10
+      if (valueTotal <=10){
+        return $(".java").show()
+      }else if (valueTotal <= 10){
+        return $(".ruby").show();
+      } else {
+        return $(".python").show();
+      } 
+    }     
+  })
+  // page 4-3
+  $("#form4-3").submit(function(event){
+    event.preventDefault();
+    const choice12 = parseInt($("#p4-3").val());
+    $(".page4-3").hide();
+    if (choice12 === 3){
+      valueTotal +=5
+      if (valueTotal <=10){
+        return $(".java").show()
+      }else if (valueTotal <= 10){
+        return $(".ruby").show();
+      } else {
+        return $(".python").show();
+      }
+    }else {
+      valueTotal +=10
+      if (valueTotal <=10){
+        return $(".java").show()
+      }else if (valueTotal <= 10){
+        return $(".ruby").show();
+      } else {
+        return $(".python").show();
+      } 
+    }        
+  })
+  // page 4-4
+  $("#form4-4").submit(function(event){
+    event.preventDefault();
+    const choice13 = parseInt($("#p4-4").val());
+    $(".page4-4").hide();
+    if (choice13 === 3){
+      valueTotal +=5
+      if (valueTotal <=10){
+        return $(".java").show()
+      }else if (valueTotal <= 10){
+        return $(".ruby").show();
+      } else {
+        return $(".python").show();
+      }
+    }else {
+      valueTotal +=10
+      if (valueTotal <=10){
+        return $(".java").show()
+      }else if (valueTotal <= 10){
+        return $(".ruby").show();
+      } else {
+        return $(".python").show();
+      } 
+    }    
+  })
   
   
 })
