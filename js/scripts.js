@@ -6,7 +6,7 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page").hide();
     $(".page1").show();
-    $(".insertName").text(name + "!!" ).toUpperCase();
+    $(".insertName").text(name.toUpperCase() + "!!" );
   });
 //page1
   $("#form2").submit(function(event){
@@ -30,10 +30,10 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page2-1").hide();
     if (choice1 === 1){
-          valueTotal +=50;
+          valueTotal +=10;
           $(".page3-1").show();
         } else {
-          valueTotal +=25;
+          valueTotal +=50;
           $(".page3-2").show();
         };
   })
@@ -43,7 +43,7 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page2-2").hide();
     if (choice2 === 1){
-          valueTotal +=25
+          valueTotal +=10
           $(".page3-3").show();
         } else {
           valueTotal +=50
@@ -54,7 +54,6 @@ $(document).ready(function(){
   $("#form2-3").submit(function(event){
     const choice3 = parseInt($("#p2-3").val());
     event.preventDefault();
-    console.log(valueTotal)
     $(".page2-3").hide();
     if (choice3 === 1){
           valueTotal +=10
@@ -147,20 +146,20 @@ $(document).ready(function(){
     event.preventDefault();
     const choice10 = parseInt($("#p4-1").val());
     $(".page4-1").hide();
-    if (choice10 === 3){
-      valueTotal +=5
-      if (valueTotal <=10){
+    if (choice10 === 1){
+      valueTotal +=10
+      if (valueTotal <=45){
         return $(".java").show()
-      }else if (valueTotal <= 10){
+      }else if (valueTotal <= 95){
         return $(".ruby").show();
       } else {
         return $(".python").show();
       }
     }else {
-      valueTotal +=10
-      if (valueTotal <=10){
+      valueTotal +=50
+      if (valueTotal <=45){
         return $(".java").show()
-      }else if (valueTotal <= 10){
+      }else if (valueTotal <= 95){
         return $(".ruby").show();
       } else {
         return $(".python").show();
@@ -172,20 +171,20 @@ $(document).ready(function(){
     event.preventDefault();
     const choice11 = parseInt($("#p4-2").val());
     $(".page4-2").hide();
-    if (choice11 === 3){
-      valueTotal +=5
-      if (valueTotal <=10){
+    if (choice11 === 1){
+      valueTotal +=10
+      if (valueTotal <=45){
         return $(".java").show()
-      }else if (valueTotal <= 10){
+      }else if (valueTotal <= 95){
         return $(".ruby").show();
       } else {
         return $(".python").show();
       }
     }else {
-      valueTotal +=10
-      if (valueTotal <=10){
+      valueTotal +=50
+      if (valueTotal <=45){
         return $(".java").show()
-      }else if (valueTotal <= 10){
+      }else if (valueTotal <= 95){
         return $(".ruby").show();
       } else {
         return $(".python").show();
@@ -197,20 +196,20 @@ $(document).ready(function(){
     event.preventDefault();
     const choice12 = parseInt($("#p4-3").val());
     $(".page4-3").hide();
-    if (choice12 === 3){
-      valueTotal +=5
-      if (valueTotal <=10){
+    if (choice12 === 1){
+      valueTotal +=10
+      if (valueTotal <=45){
         return $(".java").show()
-      }else if (valueTotal <= 10){
+      }else if (valueTotal <= 95){
         return $(".ruby").show();
       } else {
         return $(".python").show();
       }
     }else {
-      valueTotal +=10
-      if (valueTotal <=10){
+      valueTotal +=50
+      if (valueTotal <=45){
         return $(".java").show()
-      }else if (valueTotal <= 10){
+      }else if (valueTotal <= 95){
         return $(".ruby").show();
       } else {
         return $(".python").show();
@@ -222,20 +221,21 @@ $(document).ready(function(){
     event.preventDefault();
     const choice13 = parseInt($("#p4-4").val());
     $(".page4-4").hide();
-    if (choice13 === 3){
-      valueTotal +=5
-      if (valueTotal <=10){
+    if (choice13 === 1){
+      valueTotal +=10
+      if (valueTotal <=45){
         return $(".java").show()
-      }else if (valueTotal <= 10){
+      }else if (valueTotal <= 95){
         return $(".ruby").show();
       } else {
         return $(".python").show();
       }
     }else {
-      valueTotal +=10
-      if (valueTotal <=10){
+      valueTotal +=50
+      if (valueTotal <=45){
+        console.log(valueTotal)
         return $(".java").show()
-      }else if (valueTotal <= 10){
+      }else if (valueTotal <= 95){
         return $(".ruby").show();
       } else {
         return $(".python").show();
