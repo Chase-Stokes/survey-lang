@@ -11,174 +11,181 @@
   <title>Adventure Survey</title>
 </head>
 <body>
-  <div class="page">
-    <p>Enter your name for this adventure</p>
-    <form id=form1>
-      <label for="name">Enter Your Name:</label>
-        <input id="name" type="text">
+  <div class="container">
+    <div class="jumbotron"></div>
+    <div class="page">
+      <p>Enter your name for this adventure</p>
+      <form id=form1>
+        <label for="name">Enter Your Name:</label>
+        <br>
+          <input id="name" type="text">
+          <br>
+          <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="page1">
+      <p>Weapons which to choose? - 3 answer question</p>
+      <form id=form2>
+        <select name="weapon" id="weapon">
+          <option value="1">Sword & Shield</option>
+          <option value="2">2h Axe</option>
+          <option value="3">Magical Staff</option>
+        </select>
         <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page1">
-    <p>Weapons which to choose? - 3 answer question</p>
-    <form id=form2>
-      <select name="weapon" id="weapon">
-        <option value="1">Sword & Shield</option>
-        <option value="2">2h Axe</option>
-        <option value="3">Magical Staff</option>
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page2-1">
-    <p>You chose the sword and shield --<span class="insertName"></span> You rush outside with your weapon in tow and kill some monster -- Insert another 2 answer question here</p>
-    <form id="form2-1">
-      <select name="p2-1" id="p2-1">
-        <option value="1">option1</option>
-        <option value="2">option2</option>
+      </form>
+    </div>
+    <div class="page2-1">
+      <p>You chose the sword and shield --<span class="insertName"></span> You rush outside with your weapon in tow and kill some monster -- Insert another 2 answer question here</p>
+      <form id="form2-1">
+        <select name="p2-1" id="p2-1">
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+  
+        </select>
+        <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="page2-2">
+      <p>You chose the two handed axe --<span class="insertName"></span> You rush outside with your weapon in tow and kill some monster -- Insert another 2 answer question here</p>
+      <form id=form2-2>
+        <select name="p2-2" id="p2-2">
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+        </select>
+        <br>
+        <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="page2-3">
+      <p>You chose the staff --<span class="insertName"></span> You rush outside with your weapon in tow and kill some monster -- Insert another 2 answer question here</p>
+      <form id=form2-3>
+        <select name="p2-3" id="p2-3">
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+        </select>
+        <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="page3-1">
+      <p>you get brought to this page from page2-1 first answer</p>
+      <form id=form3-1>
+        <select name="p3-1" id="p3-1">
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+        </select>
+        <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="page3-2">
+      <p>you get brought to this page from page2-1 second answer</p>
+      <form id=form3-2>
+        <select name="p3-2" id="p3-2">
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+        </select>
+        <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="page3-3">
+      <p>you get brought to this page from page2-2 first answer</p>
+      <form id=form3-3>
+        <select name="p3-3" id="p3-3">
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+        </select>
+        <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="page3-4">
+      <p>you get brought to this page from page2-2 second answer</p>
+      <form id=form3-4>
+        <select name="p3-4" id="p3-4">
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+        </select>
+        <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="page3-5">
+      <p>you get brought to this page from page2-3 first answer</p>
+      <form id=form3-5>
+        <select name="p3-5" id="p3-5">
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+        </select>
+        <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="page3-6">
+      <p>you get brought to this page from page2-3 second answer</p>
+      <form id=form3-6>
+        <select name="p3-6" id="p3-6">
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+        </select>
+        <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="page4-1">
+      <p>first answer from the following pages</p>
+      <p>--page3-1--page3-3--page3-5--</p>
+      <form id=form4-1>
+        <select name="p4-1" id="p4-1">
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+        </select>
+        <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="page4-2">
+      <p>second answer from the following pages</p>
+      <p>--page3-1--page3-3--page3-5--</p>
+      <form id=form4-2>
+        <select name="p4-2" id="p4-2">
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+        </select>
+        <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="page4-3">
+      <p>first answer from the following pages</p>
+      <p>--page3-2--page3-4--page3-6--</p>
+      <form id=form4-3>
+        <select name="p4-3" id="p4-3">
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+        </select>
+        <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="page4-4">
+      <p>second answer from the following pages</p>
+      <p>--page3-2--page3-4--page3-6--</p>
+      <form id=form4-4>
+        <select name="p4-4" id="p4-4">
+          <option value="1">option1</option>
+          <option value="2">option2</option>
+        </select>
+        <button class="btn-dark">next</button>
+      </form>
+    </div>
+    <div class="java">
+      <h3>Java?</h3>
+      <p>The chest was full of coffee beans!? Based off of your choices the past few minutes, you should consider learning Java.</p>
+      <p><span class="javaOutput"></span></p>
+    </div>
+    <div class="ruby">
+      <h3>Rubies!</h3>
+      <p>The chest was full of rubies! Based off of your choices the past few minutes, you should consider learning Ruby.</p>
+      <p><span class="rubyOutput"></span></p>
+    </div>
+    <div class="python">
+      <h3>A Snake!?</h3>
+      <p>A python lunges out of the chest and bites your hand. Based off of your choices the past few minutes, you should consider learning Python. </p>
+      <p><span class="pythonOutput"></span></p>
+    </div>
 
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page2-2">
-    <p>You chose the two handed axe --<span class="insertName"></span> You rush outside with your weapon in tow and kill some monster -- Insert another 2 answer question here</p>
-    <form id=form2-2>
-      <select name="p2-2" id="p2-2">
-        <option value="1">option1</option>
-        <option value="2">option2</option>
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page2-3">
-    <p>You chose the staff --<span class="insertName"></span> You rush outside with your weapon in tow and kill some monster -- Insert another 2 answer question here</p>
-    <form id=form2-3>
-      <select name="p2-3" id="p2-3">
-        <option value="1">option1</option>
-        <option value="2">option2</option>
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page3-1">
-    <p>you get brought to this page from page2-1 first answer</p>
-    <form id=form3-1>
-      <select name="p3-1" id="p3-1">
-        <option value="1">option1</option>
-        <option value="2">option2</option>
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page3-2">
-    <p>you get brought to this page from page2-1 second answer</p>
-    <form id=form3-2>
-      <select name="p3-2" id="p3-2">
-        <option value="1">option1</option>
-        <option value="2">option2</option>
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page3-3">
-    <p>you get brought to this page from page2-2 first answer</p>
-    <form id=form3-3>
-      <select name="p3-3" id="p3-3">
-        <option value="1">option1</option>
-        <option value="2">option2</option>
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page3-4">
-    <p>you get brought to this page from page2-2 second answer</p>
-    <form id=form3-4>
-      <select name="p3-4" id="p3-4">
-        <option value="1">option1</option>
-        <option value="2">option2</option>
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page3-5">
-    <p>you get brought to this page from page2-3 first answer</p>
-    <form id=form3-5>
-      <select name="p3-5" id="p3-5">
-        <option value="1">option1</option>
-        <option value="2">option2</option>
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page3-6">
-    <p>you get brought to this page from page2-3 second answer</p>
-    <form id=form3-6>
-      <select name="p3-6" id="p3-6">
-        <option value="1">option1</option>
-        <option value="2">option2</option>
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page4-1">
-    <p>first answer from the following pages</p>
-    <p>--page3-1--page3-3--page3-5--</p>
-    <form id=form4-1>
-      <select name="p4-1" id="p4-1">
-        <option value="1">option1</option>
-        <option value="2">option2</option>
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page4-2">
-    <p>second answer from the following pages</p>
-    <p>--page3-1--page3-3--page3-5--</p>
-    <form id=form4-2>
-      <select name="p4-2" id="p4-2">
-        <option value="1">option1</option>
-        <option value="2">option2</option>
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page4-3">
-    <p>first answer from the following pages</p>
-    <p>--page3-2--page3-4--page3-6--</p>
-    <form id=form4-3>
-      <select name="p4-3" id="p4-3">
-        <option value="1">option1</option>
-        <option value="2">option2</option>
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="page4-4">
-    <p>second answer from the following pages</p>
-    <p>--page3-2--page3-4--page3-6--</p>
-    <form id=form4-4>
-      <select name="p4-4" id="p4-4">
-        <option value="1">option1</option>
-        <option value="2">option2</option>
-      </select>
-      <button class="btn-dark">next</button>
-    </form>
-  </div>
-  <div class="java">
-    <h3>Java?</h3>
-    <p>The chest was full of coffee beans!? Based off of your choices the past few minutes, you should consider learning Java.</p>
-    <p><span class="javaOutput"></span></p>
-  </div>
-  <div class="ruby">
-    <h3>Rubies!</h3>
-    <p>The chest was full of rubies! Based off of your choices the past few minutes, you should consider learning Ruby.</p>
-    <p><span class="rubyOutput"></span></p>
-  </div>
-  <div class="python">
-    <h3>A Snake!?</h3>
-    <p>A python lunges out of the chest and bites your hand. Based off of your choices the past few minutes, you should consider learning Python. </p>
-    <p><span class="pythonOutput"></span></p>
   </div>
   
 </body>
