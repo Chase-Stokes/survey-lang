@@ -6,7 +6,7 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page").hide();
     $(".page1").show();
-    $(".insertName").text(name.toUpperCase() + "!!" );
+    $(".insertName").text(name.toUpperCase());
   });
 //page1
   $("#form2").submit(function(event){
@@ -241,6 +241,15 @@ $(document).ready(function(){
         return $(".python").show();
       } 
     }    
+  })
+
+  $(".restart").submit(function(event){
+    event.preventDefault();
+    $(".java").hide();
+    $(".ruby").hide();
+    $(".python").hide();
+    $(".page").show();
+
   })
   
   
