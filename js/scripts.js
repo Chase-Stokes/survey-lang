@@ -243,13 +243,7 @@ $(document).ready(function(){
     }    
   })
 
-  $(".restart").submit(function(event){
-    event.preventDefault();
-    $(".java").hide();
-    $(".ruby").hide();
-    $(".python").hide();
-    $(".page").show();
-
+  $(".restart").submit(function(){
   })
   
   
