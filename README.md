@@ -19,8 +19,8 @@ _A choose your own adventure that will display a programming language you could 
 
 * _Clone the project from [github.com/chase-stokes/survey-lang]_
 * _Navigate to the directory in your terminal_
-* _run the command "git code ."_
-* _open the html to monitor changes_
+* _run the command "code ." in your terminal_
+* _open the html by right clicking the html in your text-editor and click open live server to monitor changes in your preferred browser_
 * _enjoy the story!_
 
 ## Known Bugs

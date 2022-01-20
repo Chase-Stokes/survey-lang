@@ -14,15 +14,15 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page1").hide();
     if (weapon === 1){
-          valueTotal +=10
-          $(".page2-1").show();
-        } else if(weapon === 2){
-          valueTotal += 30
-          $(".page2-2").show();
-        } else {
-          valueTotal +=50
-          $(".page2-3").show();
-        };
+      valueTotal +=10
+      $(".page2-1").show();
+    } else if(weapon === 2){
+      valueTotal += 30
+      $(".page2-2").show();
+    } else {
+      valueTotal +=50
+      $(".page2-3").show();
+    };
   })
   //page2-1
   $("#form2-1").submit(function(event){
@@ -30,12 +30,12 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page2-1").hide();
     if (choice1 === 1){
-          valueTotal +=10;
-          $(".page3-1").show();
-        } else {
-          valueTotal +=50;
-          $(".page3-2").show();
-        };
+      valueTotal +=10;
+      $(".page3-1").show();
+    } else {
+      valueTotal +=50;
+      $(".page3-2").show();
+    };
   })
   //page2-2
   $("#form2-2").submit(function(event){
@@ -43,12 +43,12 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page2-2").hide();
     if (choice2 === 1){
-          valueTotal +=10
-          $(".page3-3").show();
-        } else {
-          valueTotal +=50
-          $(".page3-4").show();
-        };
+      valueTotal +=10
+      $(".page3-3").show();
+    } else {
+      valueTotal +=50
+      $(".page3-4").show();
+    };
   })
   //page2-3
   $("#form2-3").submit(function(event){
@@ -56,12 +56,12 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page2-3").hide();
     if (choice3 === 1){
-          valueTotal +=10
-          $(".page3-5").show();
-        } else {
-          valueTotal +=50
-          $(".page3-6").show();
-        };
+      valueTotal +=10
+      $(".page3-5").show();
+    } else {
+      valueTotal +=50
+      $(".page3-6").show();
+    };
   })
   //page3-1
   $("#form3-1").submit(function(event){
@@ -69,12 +69,12 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page3-1").hide();
     if (choice4 === 1){
-          valueTotal +=10
-          $(".page4-1").show();
-        } else {
-          valueTotal +=50
-          $(".page4-2").show();
-        };
+      valueTotal +=10
+      $(".page4-1").show();
+    } else {
+      valueTotal +=50
+      $(".page4-2").show();
+    };
   })
   //page3-2
   $("#form3-2").submit(function(event){
@@ -82,12 +82,12 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page3-2").hide();
     if (choice5 === 1){
-          valueTotal +=10
-          $(".page4-3").show();
-        } else {
-          valueTotal +=50
-          $(".page4-4").show();
-        };
+      valueTotal +=10
+      $(".page4-3").show();
+    } else {
+      valueTotal +=50
+      $(".page4-4").show();
+    };
   })
   //page3-3
   $("#form3-3").submit(function(event){
@@ -95,12 +95,12 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page3-3").hide();
     if (choice6 === 1){
-          valueTotal +=10
-          $(".page4-1").show();
-        } else {
-          valueTotal +=50
-          $(".page4-2").show();
-        };
+      valueTotal +=10
+      $(".page4-1").show();
+    } else {
+      valueTotal +=50
+      $(".page4-2").show();
+    };
   })
   //page3-4
   $("#form3-4").submit(function(event){
@@ -108,12 +108,12 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page3-4").hide();
     if (choice7 === 1){
-          valueTotal +=10
-          $(".page4-3").show();
-        } else {
-          valueTotal +=50
-          $(".page4-4").show();
-        };
+      valueTotal +=10
+      $(".page4-3").show();
+    } else {
+      valueTotal +=50
+      $(".page4-4").show();
+    };
   })
   //page3-5
   $("#form3-5").submit(function(event){
@@ -121,12 +121,12 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page3-5").hide();
     if (choice8 === 1){
-          valueTotal +=10
-          $(".page4-1").show();
-        } else {
-          valueTotal +=50
-          $(".page4-2").show();
-        };
+      valueTotal +=10
+      $(".page4-1").show();
+    } else {
+      valueTotal +=50
+      $(".page4-2").show();
+    };
   })
   //page3-6
   $("#form3-6").submit(function(event){
@@ -134,12 +134,12 @@ $(document).ready(function(){
     event.preventDefault();
     $(".page3-6").hide();
     if (choice9 === 1){
-          valueTotal +=10
-          $(".page4-3").show();
-        } else {
-          valueTotal +=50
-          $(".page4-4").show();
-        };
+      valueTotal +=10
+      $(".page4-3").show();
+    } else {
+      valueTotal +=50
+      $(".page4-4").show();
+    };
   })
   // page 4-1
   $("#form4-1").submit(function(event){
